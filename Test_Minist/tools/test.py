@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-
+import warnings
+warnings.simplefilter("ignore",category=UserWarning)
 import os, sys
 CODE_SPACE=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(CODE_SPACE)
@@ -276,7 +277,7 @@ def test_single(args, imgs_list, local_rank, model, gt_embs_list):
         # label_names = [id_to_label[i] for i in labels]
         print()
         print(f'label_names for img{i+1}', label_names)
-
+        print(save_path)
         # # change to initial color
         # if not args.new_definitions:
         #     UNAME = [v for v in UNI_UID2UNAME.values()]

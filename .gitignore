@@ -1,0 +1,8 @@
+*.jpg
+*.png
+*.xml
+*.txt
+*.ipynb
+*.pth
+*.npy
+__pycache__
